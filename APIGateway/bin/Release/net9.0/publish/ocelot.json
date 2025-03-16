@@ -1,0 +1,32 @@
+{
+    "Routes": [
+      {
+        "DownstreamPathTemplate": "/api/products/{everything}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          { "Host": "localhost", "Port": 5040 }
+        ],
+        "UpstreamPathTemplate": "/api/products/{everything}",
+        "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+      },
+      {
+        "DownstreamPathTemplate": "/api/reports/{everything}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          { "Host": "localhost", "Port": 5019 }
+        ],
+        "UpstreamPathTemplate": "/api/reports/{everything}",
+        "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+      },
+      {
+        "DownstreamPathTemplate": "/api/users/{everything}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          { "Host": "localhost", "Port": 5025 }
+        ],
+        "UpstreamPathTemplate": "/api/users/{everything}",
+        "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+      }
+    ]
+  }
+  
