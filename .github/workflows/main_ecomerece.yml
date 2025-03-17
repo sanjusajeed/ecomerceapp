@@ -21,7 +21,7 @@ jobs:
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '9.x'
+          dotnet-version: '9.0'
 
       - name: Build with dotnet
         run: dotnet build --configuration Release
@@ -55,4 +55,4 @@ jobs:
           app-name: 'ecomerece'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_EA76EB63A956421C80DD2F2189A587B9 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1E6596D7F600462F8EA373579D4B7646 }}
